@@ -1,14 +1,22 @@
 package com.techreturners.cats;
 
 public class DomesticCat implements Cat {
+
+    boolean sleep;
+
+    {
+        sleep = false;
+    }
+
     @Override
     public boolean isAsleep() {
-        return false;
+        return sleep;
     }
 
     @Override
     public boolean goToSleep() {
-        return false;
+        sleep = true;
+        return true;
     }
 
     @Override
@@ -19,16 +27,18 @@ public class DomesticCat implements Cat {
     @Override
     public void wakeUp() {
 
+        sleep = false;
+
     }
 
     @Override
     public String getSetting() {
-        return null;
+        return "domestic";
     }
 
     @Override
     public int getAverageHeight() {
-        return 0;
+        return 23;
     }
 
     @Override
