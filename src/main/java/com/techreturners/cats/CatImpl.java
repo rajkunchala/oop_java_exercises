@@ -14,11 +14,9 @@ public abstract class CatImpl implements Cat{
     public abstract String eat();
 
     public void sleep() {
-        // TODO Auto-generated method stub
     }
 
     public void run() {
-        // TODO Auto-generated method stub
     }
 
     public int getAverageHeight() {

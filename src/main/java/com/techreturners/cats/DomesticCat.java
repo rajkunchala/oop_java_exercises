@@ -4,7 +4,6 @@ public class DomesticCat extends CatImpl {
 
     public DomesticCat(String setting, int averageHeight) {
         super(setting, averageHeight);
-        // TODO Auto-generated constructor stub
     }
     public DomesticCat() {
         super("domestic",23);
@@ -12,7 +11,6 @@ public class DomesticCat extends CatImpl {
 
     @Override
     public String eat() {
-        // TODO Auto-generated method stub
         return "Purrrrrrr";
     }
 

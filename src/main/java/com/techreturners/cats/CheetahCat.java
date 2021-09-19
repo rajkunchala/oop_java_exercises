@@ -12,22 +12,18 @@ public class CheetahCat extends CatImpl {
 
     @Override
     public String eat() {
-        // TODO Auto-generated method stub
         return "Zzzzzzz";
     }
 
     public void goToSleep() {
         // TODO Auto-generated method stub
-
     }
 
     public void wakeUp() {
         // TODO Auto-generated method stub
-
     }
 
     public boolean isAsleep() {
-        // TODO Auto-generated method stub
         return super.isAsleep;
     }
 }
