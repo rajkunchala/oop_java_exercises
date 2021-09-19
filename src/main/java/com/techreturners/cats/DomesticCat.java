@@ -1,49 +1,33 @@
 package com.techreturners.cats;
 
-public class DomesticCat implements Cat {
+public class DomesticCat extends CatImpl {
 
-    boolean sleep;
-
-    {
-        sleep = false;
+    public DomesticCat(String setting, int averageHeight) {
+        super(setting, averageHeight);
+        // TODO Auto-generated constructor stub
     }
-
-    @Override
-    public boolean isAsleep() {
-        return sleep;
-    }
-
-    @Override
-    public boolean goToSleep() {
-        sleep = true;
-        return true;
-    }
-
-    @Override
-    public boolean checkCatCanGoToSleep() {
-        return false;
-    }
-
-    @Override
-    public void wakeUp() {
-
-        sleep = false;
-
-    }
-
-    @Override
-    public String getSetting() {
-        return "domestic";
-    }
-
-    @Override
-    public int getAverageHeight() {
-        return 23;
+    public DomesticCat() {
+        super("domestic",23);
     }
 
     @Override
     public String eat() {
-        return null;
+        // TODO Auto-generated method stub
+        return "Purrrrrrr";
+    }
+
+    public boolean isAsleep() {
+
+        return super.isAsleep;
+    }
+
+    public void wakeUp() {
+
+        super.isAsleep = false;
+    }
+    public void goToSleep() {
+        super.isAsleep = true;
+
     }
 
 }

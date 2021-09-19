@@ -1,38 +1,33 @@
 package com.techreturners.cats;
 
-public class CheetahCat implements Cat {
-    @Override
-    public boolean isAsleep() {
-        return false;
+public class CheetahCat extends CatImpl {
+
+    public CheetahCat(String setting, int averageHeight) {
+        super(setting, averageHeight);
     }
 
-    @Override
-    public boolean goToSleep() {
-        return false;
-    }
-
-    @Override
-    public boolean checkCatCanGoToSleep() {
-        return false;
-    }
-
-    @Override
-    public void wakeUp() {
-
-    }
-
-    @Override
-    public String getSetting() {
-        return null;
-    }
-
-    @Override
-    public int getAverageHeight() {
-        return 0;
+    public CheetahCat() {
+        super("wild",1100);
     }
 
     @Override
     public String eat() {
-        return null;
+        // TODO Auto-generated method stub
+        return "Zzzzzzz";
+    }
+
+    public void goToSleep() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void wakeUp() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public boolean isAsleep() {
+        // TODO Auto-generated method stub
+        return super.isAsleep;
     }
 }
