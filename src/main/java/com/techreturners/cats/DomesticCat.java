@@ -1,5 +1,7 @@
 package com.techreturners.cats;
 
+import java.util.Random;
+
 public class DomesticCat extends CatImpl {
 
     public DomesticCat(String setting, int averageHeight) {
@@ -12,6 +14,13 @@ public class DomesticCat extends CatImpl {
     @Override
     public String eat() {
         return "Purrrrrrr";
+    }
+
+    public String eat(Random random){
+        String[] comments = {"Purrrrrrr","Purrrrrrr! It will do I suppose"};
+        int randomComment = random.nextInt(comments.length);
+
+        return comments[randomComment];
     }
 
     public boolean isAsleep() {
