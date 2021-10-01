@@ -1,6 +1,5 @@
 package com.techreturners.cats;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import testhelper.RandomStub;
 
@@ -76,7 +75,6 @@ public class CatTest {
         RandomStub stub = new RandomStub(1);
 
         String result = domesticCat.eat(stub);
-
         assertEquals("Purrrrrrr! It will do I suppose", result);
     }
 }

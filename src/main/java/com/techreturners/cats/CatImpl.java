@@ -20,9 +20,11 @@ public abstract class CatImpl implements Cat{
     }
 
     public int getAverageHeight() {
+
         return this.averageHeight;
     }
     public String getSetting() {
+
         return this.setting;
     }
 }

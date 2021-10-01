@@ -4,10 +4,8 @@ import java.util.Random;
 
 public class DomesticCat extends CatImpl {
 
-    public DomesticCat(String setting, int averageHeight) {
-        super(setting, averageHeight);
-    }
     public DomesticCat() {
+
         super("domestic",23);
     }
 
@@ -19,7 +17,6 @@ public class DomesticCat extends CatImpl {
     public String eat(Random random){
         String[] comments = {"Purrrrrrr","Purrrrrrr! It will do I suppose"};
         int randomComment = random.nextInt(comments.length);
-
         return comments[randomComment];
     }
 

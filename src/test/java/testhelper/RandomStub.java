@@ -12,6 +12,7 @@ public class RandomStub extends Random {
 
     @Override
     public int nextInt(int value){
+
         return this.value;
     }
 }
