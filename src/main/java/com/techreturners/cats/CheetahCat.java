@@ -13,12 +13,6 @@ public class CheetahCat extends CatImpl {
         return "Zzzzzzz";
     }
 
-    public void goToSleep() {
-    }
-
-    public void wakeUp() {
-    }
-
     public boolean isAsleep() {
 
         return super.isAsleep;

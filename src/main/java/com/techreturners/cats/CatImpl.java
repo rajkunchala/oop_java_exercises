@@ -19,6 +19,12 @@ public abstract class CatImpl implements Cat{
     public void run() {
     }
 
+    public void goToSleep() {
+    }
+
+    public void wakeUp() {
+    }
+
     public int getAverageHeight() {
 
         return this.averageHeight;
